@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ejercicio 2</title>
+    <script>
+        function cambiarColor(){
+            const notas = document.getElementsByClassName('nota');
+            for(const texto of notas){
+                texto.style.color = "orange";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="menu">
+        <nav>
+        <a href="index.html">Regresar</a>
+        </nav>
+    </div>
+    <p class="nota">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quam nobis tempore amet deleniti. Maiores esse necessitatibus sit vitae, nam exercitationem non consequuntur doloribus numquam, ratione vel officiis harum? Sapiente!</p>
+    <hr>
+    <p class="nota">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni mollitia doloribus distinctio commodi, accusantium quos temporibus molestias assumenda sapiente repellat aut sunt ad placeat numquam itaque, id enim totam est.</p>
+    <hr>
+    <p class="nota">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, voluptatibus impedit tempora nihil perferendis magnam commodi porro consequatur reprehenderit, quibusdam ipsa odit laboriosam veniam earum illum est. Repudiandae, veritatis architecto.</p>
+    <input type="button" value="Cambiar Color" onclick="cambiarColor()">
+</body>
+</html>
